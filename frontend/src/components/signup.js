@@ -38,7 +38,7 @@ const Signup = ({ onSignup }) => {
       {error && <Alert variant="danger">{error}</Alert>}
 
       <Form onSubmit={handleSignup}>
-        <Form.Group controlId="formBasicEmail">
+        <Form.Group controlId="formUsername">
           <Form.Label>Username</Form.Label>
           <Form.Control
             type="text"
@@ -57,6 +57,18 @@ const Signup = ({ onSignup }) => {
             placeholder="Password"
             name="password"
             value={formData.password}
+            onChange={handleInputChange}
+            required
+          />
+        </Form.Group>
+
+         <Form.Group controlId="formBasicEmail">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={formData.email}
             onChange={handleInputChange}
             required
           />

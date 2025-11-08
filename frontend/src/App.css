@@ -17,6 +17,7 @@ body {
 #appLogo {
   width: 150px;
   height: auto;
+  margin-top: '160px'
 }
 
 .App {
@@ -27,9 +28,11 @@ body {
 }
 
 .appTitle h1 {
-  color: #F54996ff;
-  font-size: 36px;
-  margin: 40px 0 40px 0;
+  color: rgb(63, 15, 126);
+  font-size: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 'bold';
+  margin: -30px 0 40px 0;
 }
 
 .appTitle {

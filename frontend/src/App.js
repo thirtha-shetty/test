@@ -11,6 +11,7 @@ import Login from './components/login';
 import Signup from './components/signup';
 import Journal from './components/journal';
 import logo from './img/CFG_logo.png'; // Update the path to your logo file
+import background from './img/background.png';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,12 +26,22 @@ function App() {
     setIsLoggedIn(true);
     setCurrentUser(username);
   };
+  
+  const style = {
+    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${background})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    minHeight: '100vh',
+    textAlign: 'center', 
+    paddingTop: '50px',
+  };
+
 
   return (
-    <div className="App">
+    <div className="App" style={style}>
       <Router>
         <div className="appTitle">
-          <h1>MLA Fitness App</h1>
+          <h1>GROUP-3 MLA FITNESS APP</h1>
           <img src={logo} alt="CFG Fitness App Logo" id="appLogo" />
         </div>
 
